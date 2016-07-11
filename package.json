@@ -1,0 +1,19 @@
+{
+  "name": "docs.participedia.net",
+  "version": "1.0.0",
+  "description": "What it is: a site explaining the technical approach used for v3 of Participedia.net, to facilitate contribution and collaboration by interested folks.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "harp compile && surge deploy -p www docs.participedia.xyz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/participedia/docs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/participedia/docs/issues"
+  },
+  "homepage": "https://github.com/participedia/docs#readme"
+}

@@ -62,6 +62,7 @@ html(lang="en")
     .content
       .container
         if current.path[0] === "index" || current.path[0] === "tags"
+          != yield
           .articles
             if current.path[0] === "tags" 
               aside.center
@@ -74,13 +75,12 @@ html(lang="en")
                     - continue    
                 article
                   a.main(href="/blog/#{ slug }")
-                    h1.sm= post.title
-                    h2.xs.date #{ post.date }
+                    h2.sm= post.title
+                    h3.xs.date #{ post.date }
                     if post.description
                       p= post.description  
                     != partial("/_shared/blog-tags.jade", { tags: post.tags })
-          != yield
-            != partial("_shared/footer")
+          != partial("_shared/footer")
           
           
         else
@@ -88,6 +88,6 @@ html(lang="en")
             != partial("/blog/_blog")
           else if current.path[0] === "authors"
             != partial("/authors/_author")
-          else if ["404", "about"].indexOf(current.path[0]) !== -1
+          else if ["404", "about", "credits", "glossary"].indexOf(current.path[0]) !== -1
             section.page
               != yield

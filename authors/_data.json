@@ -1,11 +1,10 @@
 {
-  "matthias-jordan": {
-    "name": "Matthias Jordan",
-    "about": "Matthias Jordan takes a lot of pictures, cooks a lot of food, and reads a lot of books.",
-    "bio": "Matthias Jordan doesn't do what Matthias Jordan does for Matthias Jordan. Matthias Jordan does what Matthias Jordan does because Matthias Jordan is... Matthias Jordan.",
-    "photo": "matthias-jordan.png",
-    "twitter": "iammatthias",
-    "google_plus": "https://plus.google.com/+MatthiasJordan",
-    "github": "iammatthias"
+  "david-ascher": {
+    "name": "David Ascher",
+    "about": "David Ascher is technical lead for v3 of Participedia.net",
+    "bio": "bla bla",
+    "photo": "david-ascher-2.png",
+    "twitter": "davidascher",
+    "github": "davidascher"
   }
 }

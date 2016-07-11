@@ -1,8 +1,8 @@
 {
   "globals": {
-    "site_title": "Baseline Tufte",
-    "description": "This is a Tufte-ed version of Baseline, for HarpJS and the Harp platform.",
-    "site_url": "http://iammatthias.com/hb-tufte",
+    "site_title": "Participedia Technical Docs",
+    "description": "The documentation for the upcoming third edition of participedia.net",
+    "site_url": "https://docs.participedia.xyz",
     "logo": "/images/logo.png",
     "analytics_account": "#"
   }

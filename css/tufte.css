@@ -165,18 +165,26 @@ table.booktabs { width: auto;
 .booktabs tbody tr td.r { text-align: right !important; }
 
 article { position: relative;
-          padding: 5rem 0rem; }
+          padding: 2rem 0rem; }
 
 section { padding-top: 1rem;
           padding-bottom: 1rem; }
 
 p, ol, ul { font-size: 1.4rem; }
 
+a {
+  font-style: italic;
+}
+
 p { line-height: 2rem;
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
     padding-right: 0;
     vertical-align: baseline; }
+
+dd {
+  font-size: 125%;
+}
 
 /* Chapter Epigraphs */
 div.epigraph { margin: 5em 0; }
@@ -308,7 +316,7 @@ div.table-wrapper { overflow-x: scroll;
 .sans { font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
         letter-spacing: .03em; }
 
-.code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+code, .code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
         font-size: 1.125rem;
         line-height: 1.6; }
 
