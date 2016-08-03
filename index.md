@@ -24,6 +24,4 @@ as well as easier use by many clients.
 
 Participedia is built on a lot of software.  See our [credits](credits) page.
 
-
-
 # Detailed Posts

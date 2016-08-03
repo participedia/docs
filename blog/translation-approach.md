@@ -23,15 +23,11 @@ Site content is also different in that we can guarantee that the original, "sour
 
 ### References
 
-[Pontoon Documentation](http://mozilla-pontoon.readthedocs.io/en/latest/) 
-
-[React-Intl documentation](https://github.com/yahoo/react-intl)
+The reader is encouraged to read up about [Pontoon](http://mozilla-pontoon.readthedocs.io/en/latest/)  and [React-Intl](https://github.com/yahoo/react-intl)
 
 ### Deployment
 
-[Participedia's pontoon instance](translate.participedia.xyz)
-
-[Source code for our instance](https://github.com/participedia/pontoon)
+[Participedia's pontoon instance](translate.participedia.xyz) is live (but not yet in use).  The [Source code](https://github.com/participedia/pontoon) is also available for inspection.
 
 ## Content Translation
 
@@ -54,4 +50,4 @@ The translations will be stored as part of the case and method data:
       },
     ...
   }
-  
+  ```
