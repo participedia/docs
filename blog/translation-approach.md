@@ -1,57 +1,57 @@
-<figure>
-  <img src="http://farm6.staticflickr.com/5325/9093313309_b977c1737e_b.jpg" alt="Sample image">
-  <figcaption>Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem. <a href="http://rosshj.com/">I'm a link</a></figcaption>
-</figure>
+# Localization Approach
 
-Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, [I’m a link](http://rosshj.com/) porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna.
+Localization refers to making a piece of software adapted to the *locale* of the user.  Often, this starts with translation, but it can also include aspects beyond strict translation.
 
-## Sollicitudin Aenean Vestibulum
+For a site like Participedia, the localization approach is both critical and somewhat complex, as the work being catalogued is both global in nature and highly local (a democratic innovation emerges in a specific political and social context, and it's important to not assume that everything fits a common mold).
 
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+# Two tiers of localization
 
-<figure class="right">
-  <img src="http://farm8.staticflickr.com/7303/9093393921_c71fcb218c_b.jpg" alt="Sample image">
-  <figcaption>Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem. <a href="http://rosshj.com/">I'm a link</a></figcaption>
-</figure>
+For version 3, the localization approach will focus on the  improvements the community has identified as critical to the success of the site, specifically making the project more accessible to non-English speakers.  This includes both translating the overall site, as well as facilitating and managing multiple translations of the case and method descriptions.
 
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+## Site Translation
 
-Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo.
+By *site translation*, we are referring to the words on the website which are not part of the user-submitted data: the menus, the headings, the copy blocks that describe the project as a whole.  These words change rarely, and having them available in a wide range of languages should make the project as a whole accessible to a broad range of users.  These words aren't stored in the database itself.
 
-## Magna Pharetra
+The approach we will use for site translation is derived from the best practices from the Mozilla project, which has been localizing websites for a long time.  Specifically:
 
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Maecenas sed diam eget risus varius blandit sit amet non magna.
+* All translated copy (all words that aren't trademarks for example) will be wrapped in components using the `react-intl` package.
+* The translation management will be done using a standalone instance of Mozilla's `Pontoon` application.
 
-![Sample image](http://farm3.staticflickr.com/2884/9093365945_460abbf239_b.jpg)
+This should allow skilled translators from the community to both find out about all strings ("bits of text in a specific context") that need to be translated for each desired language, and to distribute the work without needing specific technical skills.
 
-> “Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.”
+Site content is also different in that we can guarantee that the original, "source" language is English (this is also the assumption that Pontoon makes).
 
-> —Someone interesting
+### References
 
-Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+[Pontoon Documentation](http://mozilla-pontoon.readthedocs.io/en/latest/) 
 
-<img src="http://farm4.staticflickr.com/3708/9093384875_9d8817de9f_b.jpg" alt="Sample image" class="left">
+[React-Intl documentation](https://github.com/yahoo/react-intl)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+### Deployment
 
-Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+[Participedia's pontoon instance](translate.participedia.xyz)
 
-<figure class="right">
-  <img src="http://farm8.staticflickr.com/7316/9095545658_02ff0e4c0f_b.jpg" alt="Sample image">
-  <figcaption>Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem. <a href="http://rosshj.com/">I'm a link</a></figcaption>
-</figure>
+[Source code for our instance](https://github.com/participedia/pontoon)
 
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+## Content Translation
 
-Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+Much of the content in Participedia of course is user submitted, whether that's case data or method data.  These texts change all the time, and must live in the database (they *are* the data).  This content is not highly structured (e.g. case descriptions are just chunks of limited HTML), but they exist in a well defined structure (as part of a specific case).  We will implement a simple set of specific UI tools to let users translate case and method titles and descriptions from any supported language to any other supported language.
 
-## Elit Risus Fusce
+The translations will be stored as part of the case and method data:
 
-<figure>
-  <img src="http://farm6.staticflickr.com/5462/9095584074_b18489798b_b.jpg" alt="Sample image">
-  <figcaption>Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem. <a href="http://rosshj.com/">I'm a link</a></figcaption>
-</figure>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.
-
-Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+```
+  case: {
+    case_id: CaseID123
+    title:
+      { 'en-us': 'case title in english',
+        'fr': 'case title en français',
+        '…'
+      },
+    description:
+      { 'en-us': 'case description in english',
+        'fr': 'case description en français',
+        '…'
+      },
+    ...
+  }
+  
